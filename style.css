@@ -11,23 +11,43 @@ html{
 a{
     text-decoration: none;
 }
-.container{
+.container {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2rem;
+    font-weight: 300;
+    letter-spacing: .04rem;
+}
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-align: center;
+}
 
-/* Hero Section */
-#hero{
+/* hero section */
+#hero {
     background-image: url(./img/multipurpose.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
-#hero::after{
+#hero::after {
     content: '';
     position: absolute;
     left: 0;
@@ -35,7 +55,7 @@ a{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .7;
+    opacity: .6;
     z-index: -1;
 }
 #hero .hero {
@@ -75,10 +95,9 @@ a{
     color: white;
     background-color: rgb(155, 135, 227);
 }
-/* End Hero Section */
+/* end hero section */
 
-/* "Services" Section */
-#services{}
+/* "services" section */
 #services .services {
     flex-direction: column;
     text-align: center;
@@ -86,18 +105,10 @@ a{
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .section-title {
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    letter-spacing: .2rem;
-    text-align: center;
-}
 #services .service-top p {
-    /* THIS PARAGRAPH IS NOT FORMATTED RIGHT RIP*/
     font-size: 1.4rem;
     margin-top: 5px;
+    margin-bottom: 10px;
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: .05rem;
@@ -107,20 +118,87 @@ a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
-#services .service-item{
+#services .service-item {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-image: url(./img/multipurpose.jpg);
     background-size: cover;
     margin: 10px 5%;
+    position: relative;
+    z-index: 1;
 }
-/* End "Services" Section */
+#services .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    border-radius: 20px;
+    z-index: -1;
+}
+#services .service-bottom .icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+#services .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+#services .service-item p {
+    color: white;
+    text-align: left;
+}
+/* end "services" section */
+
+/* projects section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0; 
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: black;
+    opacity: .6;
+}
+/* end projects section */
 
 /* keyframes */
 /* keyframes */
