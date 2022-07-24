@@ -6,7 +6,7 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif
 }
 a{
     text-decoration: none;
@@ -32,11 +32,28 @@ p {
 }
 .section-title {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 500;
     color: black;
     margin-bottom: 10px;
     letter-spacing: .2rem;
     text-align: center;
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color:white;
+    background-color: transparent;
+    border: 2px solid rgb(155, 135, 227);
+    font-size: 2rem;
+    text-transform: lowercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.cta:hover{
+    color: white;
+    background-color: rgb(155, 135, 227);
 }
 
 /* hero section */
@@ -55,7 +72,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .6;
+    opacity: .5;
     z-index: -1;
 }
 #hero .hero {
@@ -77,23 +94,6 @@ p {
     font-size: 2rem;
     position: relative;
     color: white;
-}
-#hero .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid rgb(155, 135, 227);
-    font-size: 2rem;
-    text-transform: lowercase;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-#hero .cta:hover{
-    color: white;
-    background-color: rgb(155, 135, 227);
 }
 /* end hero section */
 
@@ -142,7 +142,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .6;
+    opacity: .5;
     border-radius: 20px;
     z-index: -1;
 }
@@ -196,12 +196,78 @@ p {
     align-items: flex-start;
     flex-direction: column;
     background-color: black;
-    opacity: .6;
+    opacity: .5;
+    color: white;
+}
+#projects .project-info h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#projects .project-image {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-image:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+}
+#projects .project-image img {
+    transition: .3s ease transform;
+}
+#projects .project-item:hover .project-image img {
+    transform: scale(1.1);
 }
 /* end projects section */
 
-/* keyframes */
-/* keyframes */
+/* about me section */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+#about .col-right {
+    width: 100%;
+}
+#about .col-right p {
+    margin-bottom: 10px;
+}
+#about .col-right .cta {
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+#about .col-right .cta:hover {
+    color: white;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/* end about me section */
+
+/* media query for tablet version */
+/* end media query  */
 
 /* 
 
