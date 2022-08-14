@@ -44,7 +44,7 @@ p {
     padding: 10px 20px;
     color:white;
     background-color: transparent;
-    border: 2px solid rgb(155, 135, 227);
+    border: 2px solid rgb(165, 201, 182);
     font-size: 2rem;
     text-transform: lowercase;
     letter-spacing: .1rem;
@@ -54,7 +54,7 @@ p {
 }
 .cta:hover{
     color: white;
-    background-color: rgb(155, 135, 227);
+    background-color: rgb(165, 201, 182);
 }
 
 /* header section */
@@ -115,7 +115,7 @@ p {
     display: block;
 }
 #header .nav-list ul li:hover a {
-    color: rgb(155, 135, 227);
+    color: rgb(165, 201, 182);
 }
 #header .hamburger {
     height: 60px;
@@ -156,7 +156,6 @@ p {
 #header .hamburger .bar::before {
     bottom: 8px;
 }
-/* turn 3 lines into 1 line when active (js) */
 #header .hamburger.active .bar::before {
     bottom: 0;
 } 
@@ -167,7 +166,8 @@ p {
 
 /* hero section */
 #hero {
-    background-image: url(./img/multipurpose.jpg);
+    background-image: url(./img/white\ bricks.jpg);
+    background-color: rgb(165, 201, 182);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -177,7 +177,6 @@ p {
     content: '';
     position: absolute;
     left: 0;
-    ;
     top: 0;
     height: 100%;
     width: 100%;
@@ -187,54 +186,70 @@ p {
 }
 #hero .hero {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 80px;
 }
-#hero h1{
+#hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 4.5rem;
     position: relative;
     color: white;
 }
-#hero p1{
+#hero p {
     display: block;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 2.3rem;
     position: relative;
     color: white;
+    line-height: 1.2;
+}
+#hero .col-left {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+#hero .col-right {
+    width: 390px;
+    height: 500px;
+}
+#hero .col-right .hero-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+    
 }
 /* end hero section */
 
-/* "services" section */
-#services .services {
+/* about me section */
+#about .skills {
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .service-top {
+#about .skills-top {
     max-width: 500px;
     max-width: 0 auto;
 }
-#services .service-top p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
+#about .skills-top h2 {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
-#services .service-bottom {
+#about .skills-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-#services .service-item {
+#about .skills-item {
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -242,13 +257,14 @@ p {
     flex-direction: column;
     padding: 30px;
     border-radius: 20px;
-    background-image: url(./img/multipurpose.jpg);
-    background-size: cover;
+    background-color: rgb(165, 201, 182);
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    box-shadow: 0px 0px 18px 0 rgb(99, 102, 95);
+    transition: .3s ease box-shadow;
 }
-#services .service-item::after {
+#about .skills-item::after {
     content: '';
     position: absolute;
     left: 0;
@@ -256,25 +272,49 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .5;
+    opacity: .2;
     border-radius: 20px;
     z-index: -1;
 }
-#services .service-bottom .icon {
+#about .skills-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#about .skills-bottom .icon {
     height: 50px;
     width: 50px;
     margin-bottom: 20px;
 }
-#services .service-item h2 {
+#about .skills-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
 }
-#services .service-item p {
+#about .skills-item p {
     color: white;
     text-align: left;
 }
-/* end "services" section */
+#about .skills-item ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+#about .experience-top h2 {
+    margin-top: 60px;
+    font-size: 3rem;
+}
+#about .experiences p {
+    text-align: left;
+    font-size: 16px;
+    padding: 50px 50px 0px 50px;
+    letter-spacing: .04rem;
+}
+#about .emphasize {
+    font-weight: 500;
+    background-color:rgb(165, 201, 182);
+    color: white;
+}
+/* end about me section */
 
 /* projects section */
 #projects .projects {
@@ -310,7 +350,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(#9b87e3, #29323c);
+    background-image: linear-gradient(to right top, #051937, #10425c, #356f7c, #699c98, #a5c9b6);
     color: white;
 }
 #projects .project-info h1{
@@ -344,30 +384,14 @@ p {
 #projects .project-item:hover .project-image img {
     transform: scale(1.1);
 }
+#projects a {
+    color: white;
+    text-decoration: underline;
+}
+#projects a:hover {
+    color:rgb(165, 201, 182)
+}
 /* end projects section */
-
-/* about me section */
-#about .about{
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
-}
-#about .col-left {
-    width: 250px;
-    height: 360px;
-}
-#about .col-right {
-    width: 100%;
-    margin-bottom: 30px;
-}
-#about .col-left .about-img {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-/* end about me section */
 
 /* media query for tablet version */
 @media only screen and (min-width: 768px) {
@@ -382,8 +406,16 @@ p {
     #hero h1 {
         font-size: 6rem;
     }
+    #hero .hero {
+        flex-direction: row;
+    }
+    #hero .col-right {
+        width: 390px;
+        height: 400px;
+        padding-left: 60px;
+    }
 
-    #services .service-bottom .service-item {
+    #about .skills-bottom .skills-item {
         flex-basis: 45%;
         margin: 2.5%;
     }
@@ -407,21 +439,6 @@ p {
         height: 100%;
     }
 
-    #about .about {
-        flex-direction: row;
-    }
-    #about .col-left {
-        width: 600px;
-        height: 400px;
-        padding-left: 60px;
-    }
-    #about .col-right {
-        text-align: left;
-        padding: 30px;
-    }
-    #about .col-right h1 {
-        text-align: left;
-    }
 }
 /* end media query for tablet */
 
@@ -447,7 +464,11 @@ p {
         display: none;
     }
 
-    #services .service-bottom .service-item {
+    #hero .col-right {
+        height: 500px;
+    }
+
+    #about .skills-bottom .skills-item {
         flex-basis: 22%;
         margin: 1.5%
     } 
