@@ -35,9 +35,10 @@
                 <div class="hero container">
                     <div class="col-left">
                         <h1>Hi, I'm Shannon!</h1>
-                        <p>I am a second year undergraduate at Rice University studying computer science and anthropology—my interests
-                             include software engineering, bioinformatics, user experience, and human-computer interaction. I am a 
-                             creative and driven individual always looking to learn. In my free time, I enjoy reading, trying new foods, and dragging my friends to museums!
+                        <p>I am a second year undergraduate at Rice University studying <span class="underline">computer science</span> 
+                            and <span class="underline">anthropology</span>—my interests include software engineering, bioinformatics, 
+                            user experience, and human-computer interaction. I am a creative and driven individual always looking to 
+                            learn. In my free time, I enjoy reading, trying new foods, and dragging my friends to museums!
                         </p>
                         <a href="#projects" type="button" class="cta">Portfolio</a>
                     </div>
@@ -166,9 +167,9 @@
                     <div class="project-info">
                         <h1>Personal Portfolio Website</h1>
                         <h2>Created July 2022 (Last update August 2022)</h2>
-                        <p>Right here! :) Designed and created a responsive webpage inspired by a 
-                            <span class="link"><a href="https://github.com/ShaifArfan/one-page-website-html-css-project" target="_blank">Youtube tutorial,</a></span>
-                             improving self taught skills in markup and scripting languages such as HTML, CSS, and JavaScript. 
+                        <p>Right here! :) Designed and created a responsive webpage inspired by 
+                            <span class="link"><a href="https://github.com/ShaifArfan/one-page-website-html-css-project" target="_blank">Shaif Arfan's website,</a></span>
+                             enhancing self taught skills in markup and scripting languages such as HTML, CSS, and JavaScript. 
                         </p>
                     </div>
                     <div class="project-image">
@@ -182,82 +183,74 @@
     </section>
     <!-- end projects section -->
 
-    <!-- 
-    <section id="contact">
-        <div class="contact-container">
-            <div>
-                <h1 class="section-title">Contact Me</h1>
-            </div>
-            <div class="contact-content-con">
-                <div class="left-contact">
-                    <h4>Contact me here</h4>
-                    <p>Lorem ipsum dolor</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="icon">
-                                Location
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-contact"></div>
-            </div>
-        </div>
-    </section>
-    -->
-
     <!-- contact section -->
     <section id="contact">
         <div class="contact container">
-            <div><h1 class="section-title">Contact Me</h1></div>
-            <div class="contact-content-con">
-                <div class="left-contact">
-                    <h4>Contact me here</h4>
-                    <p>
-                        Lorem ipsum dolor more words blah blah long sentence
-                    </p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="icon">
-                                <!-- icon here -->
-                                Location
+            <div class="contact header">
+                <h1 class="section-title">Contact Me</h1>
+            </div>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h2>Let's Chat!</h2>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <input type="text" required placeholder="Name">
                             </div>
-                            <p>
-                                Los Angeles, CA & Houston, TX
-                            </p>
+                            <div class="input-group">
+                                <input type="text" required placeholder="Email">
+                            </div>
                         </div>
-
-                        <div class="contact-item">
-                            <div class="icon">
-                                <!-- icon here -->
-                                Education
-                            </div>
-                            <p>
-                                Rice University, Houston, TX
-                            </p>
+                        <textarea name="" id="" cols="30" rows="12" placeholder="Message Here..."></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h2>More Info</h2>
+                    <table>
+                        <tr>
+                            <td>Location</td>
+                            <td>Los Angeles & Houston</td>
+                        </tr>
+                        <tr>
+                            <td>Education</td>
+                            <td>Rice University, Houston, TX</td>
+                        </tr>
+                        <tr>
+                            <td>Languages</td>
+                            <td>English, Chinese</td>
+                        </tr>
+                    </table>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/shannonshao/" target="_blank">
+                                <img src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png"/>
+                            </a>
                         </div>
-
-                        <div class="contact-item">
-                            <div class="icon">
-                                <!-- icon here -->
-                                Languages
-                            </div>
-                            <p>
-                                English, Chinese
-                            </p>
+                        <div class="contact-icon">
+                            <a href="mailto: sas28@rice.edu" target="_blank">
+                                <img src="https://img.icons8.com/material/30/FFFFFF/new-post--v1.png"/>
+                            </a>
+                        </div>
+                        <div class="contact-icon">
+                            <a href="https://github.com/shannonshao" target="_blank">
+                                <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/github.png"/>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="right-contact"></div>
             </div>
         </div>
     </section>
     <!-- end contact section -->
+
+    <div class="icons8">Icons by <a target="_blank" href="https://icons8.com">Icons8</a></div>
+    
 
     <script src="./app.js"></script>
 </body>
 </html>
 
 <!-- run through validator.w3.org to check for errors -->
-<!-- Icons by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+
 
