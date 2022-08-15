@@ -225,7 +225,7 @@ p {
     width: 100%;
     position: relative;
     padding-bottom: 80px;
-    
+
 }
 /* end hero section */
 
@@ -261,7 +261,8 @@ p {
     flex-direction: column;
     padding: 30px;
     border-radius: 20px;
-    background-color: rgb(165, 201, 182);
+    /* background-color: rgb(165, 201, 182); */
+    background-image: linear-gradient(to right top, #888989, #8d9998, #93a9a4, #9bb9ae, #a5c9b6);
     margin: 10px 5%;
     position: relative;
     z-index: 1;
@@ -276,7 +277,7 @@ p {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .2;
+    opacity: .0;
     border-radius: 20px;
     z-index: -1;
 }
@@ -354,7 +355,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to right top, #888989, #8d9998, #93a9a4, #9bb9ae, #a5c9b6);
+    background-image: linear-gradient(to top, #7f9681, #88a38e, #92af9b, #9bbca8, #a5c9b6);
     color: white;
 }
 #projects .project-info h1{
