@@ -261,7 +261,7 @@ p {
     flex-direction: column;
     padding: 30px;
     border-radius: 20px;
-    background-image: linear-gradient(to right top, #888989, #8d9998, #93a9a4, #9bb9ae, #a5c9b6);
+    background-image: linear-gradient(to right top, #8d9998, #93a9a4, #9bb9ae, #a5c9b6);
     margin: 10px 5%;
     position: relative;
     z-index: 1;
